@@ -7,5 +7,19 @@ def main():
      
     print(word_count)
 
+    def char_count():
+        count = {}
+        characters = list(file_contents.lower())
+        for i in characters:
+           if i in count:
+               count[i] += 1
+           else: 
+               count[i] = 1
+        print(count)
+            
+    char_count()
+
+
 
 main()
+
